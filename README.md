@@ -1,5 +1,5 @@
 
-*Steps involved in deploying to Ollama
+*Steps involved in deploying to Ollama*
 
 **1. Preparation**
 

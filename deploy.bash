@@ -35,7 +35,7 @@ else
   exit
 fi
 
-
+# create a folder called $ollama_custom_model_loc/$ollama_model_name
 # Download all the gguf model to the $ollama_custom_model_loc/$ollama_model_name
 
 git clone https://github.com/ggerganov/llama.cpp
@@ -51,7 +51,7 @@ combined_model_name=$3
 ollama_custom_model_loc=$4
 ollama_model_name=$5
 
-mkdir -p $ollama_custom_model_loc/$ollama_model_name
+#mkdir -p $ollama_custom_model_loc/$ollama_model_name
 
 bash ./llama-export-lora \
     -m $ollama_custom_model_loc/$ollama_model_name/$base_model_name \

@@ -1,5 +1,9 @@
 
-*Steps involved in deploying to Ollama*
+# Deploying to Ollama
+
+The information below outlines the manual steps required to deploy a fine-tuned model to Ollama. We have a deploy.bash script that automates steps 3 through the end. Therefore, we still need to perform steps 1 and 2 manually.
+
+## Steps
 
 **1. Preparation**
 
@@ -66,3 +70,5 @@
     ```
 
 This process allows you to leverage the LORA adapter within the base model structure for invoice-specific tasks within Ollama.
+
+

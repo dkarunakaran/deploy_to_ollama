@@ -1,4 +1,6 @@
 
+*Steps involved in deploying to Ollama
+
 **1. Preparation**
 
 * Train a LORA adapter. For example the train the model for invoice

@@ -42,8 +42,6 @@ The information below outlines the manual steps needed to deploy a fine-tuned mo
           --lora models/llama-3.2-3B-instruct-q8-invoice-q8_0.gguf
         ```
 
-    * Replace the filenames with your actual filenames. Ensure both models have the same prefix (e.g., "llama-3.2-3B-instruct") and the LORA adapter filename includes the specific task (e.g., "invoice").
-
 **5. Creating Ollama Modelfile**
 
 * Create a text file named `Modelfile` in the same directory as your combined GGUF file (`models/combined.gguf`).

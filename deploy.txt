@@ -35,6 +35,11 @@ else
   exit
 fi
 
+#Eg: ./llama-export-lora \
+  -m /home/beastan/Documents/custom_ollama_models//llama-3.2-3B-instruct-q8-invoice/llama-3.2-3b-instruct-q8_0.gguf \
+  -o /home/beastan/Documents/custom_ollama_models//llama-3.2-3B-instruct-q8-invoice/llama-3.2-3B-instruct-q8-invoice-q8_0-combined.gguf \ 
+  --lora /home/beastan/Documents/custom_ollama_models//llama-3.2-3B-instruct-q8-invoice/llama-3.2-3B-instruct-q8-invoice-q8_0.gguf
+
 # create a folder called $ollama_custom_model_loc/$ollama_model_name
 # Download all the gguf model to the $ollama_custom_model_loc/$ollama_model_name
 

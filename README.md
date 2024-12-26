@@ -36,7 +36,7 @@ The information below outlines the manual steps needed to deploy a fine-tuned mo
         ```bash
         git clone [https://github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)
         cd llama.cpp
-        cmake -B build
+        cmake -B build # sometimes, we may need to specify Release: cmake -B build -DCMAKE_BUILD_TYPE=Release 
         cmake --build build --config Release
         ```
 

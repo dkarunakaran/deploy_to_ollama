@@ -15,6 +15,16 @@ The information below outlines the manual steps needed to deploy a fine-tuned mo
 * Convert both the base model and the LORA adapter to GGUF format using the Hugging Face conversion tool ([https://github.com/ggerganov/llama.cpp/discussions/2948](https://github.com/ggerganov/llama.cpp/discussions/2948)).
     * **Base Model:** [https://huggingface.co/spaces/ggml-org/gguf-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)
     * **LORA Adapter:** [https://huggingface.co/spaces/ggml-org/gguf-my-lora](https://huggingface.co/spaces/ggml-org/gguf-my-lora)
+    * Some time above LORA Adapter link may not work. In that case, we can clone the llama.cpp by following the step no.3,
+        then run the the below step to get into the container
+        ```
+        bash run.bash
+        ```
+        Then cd to llama.cpp in the container, then run `pip install -r requirements.txt` which will install all the neceassry library for the converrsion in the container. Then run below code to convert the LORA adapters.
+        ```
+        python convert_lora_to_gguf.py models/llama-3.2-3B-instruct-q8-invoice --outfile models/llama-3.2-3B-instruct-q8-invoice/llama-3.2-3B-instruct-q8-invoice.gguf --outtype q8_0
+        ```
+
 * Download the converted GGUF files to a suitable directory within a newly created repository under your username.
 
 **3. Building Llama.cpp**
